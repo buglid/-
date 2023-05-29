@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Transpo - Transport and Logistics HTML5 Template | Home Style One</title>
+    <!-- Stylesheets -->
+   <link href="css/bootstrap.css" rel="stylesheet">
+   <link href="css/revolution-slider.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+<!--    &lt;!&ndash;Favicon&ndash;&gt;-->
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!--    &lt;!&ndash; Responsive &ndash;&gt;-->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <link href="css/responsive.css" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+   <script src="js/respond.js"></script>
+
+
+    <!-- <link th:href="@{css/bootstrap.css}" rel="stylesheet">
+    <link th:href="@{css/revolution-slider.css}" rel="stylesheet">
+    <link th:href="@{css/style.css}" rel="stylesheet">
+    <!-Favicon-->
+    <!-- <link rel="shortcut icon"  th:href="@{images/favicon.ico}" type="image/x-icon">
+    <link rel="icon" th:href="@{images/favicon.ico}" type="image/x-icon"> -->
+    <!-- Responsive -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link th:href="@{css/responsive.css}" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="js/respond.js"></script> --> 
+
+
+
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
+    <header class="main-header">
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="auto-container clearfix">
+                <!--Top Left-->
+                <div class="top-left pull-left">
+                    <ul class="links-nav clearfix">
+                        <li><a href="#">欢迎进入</a></li>
+                    </ul>
+                </div>
+
+                <!--Top Right-->
+                <div class="top-right pull-right">
+                    <ul class="links-nav clearfix">
+<!--                        <li><a href="#">About us</a></li>-->
+                        <li><a href="index.html">注册</a></li>
+                        <li><a href="index.html">登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- Header Top End -->
+
+<!--        Header-Upper-->
+        <div class="header-upper">
+            <div class="auto-container">
+                <div class="clearfix">
+
+                    <div class="pull-left logo-outer col-md-12">
+                        <div class="logo col-md-4" ><a href="#"><images src="images/ok.jpg" alt="Transpo" title="Transpo"></a></div>
+
+                    <div class="name col-md-8">大气污染数据聚类分析系统</div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--Header-Lower-->
+        <div class="header-lower">
+            <!--Background Layer-->
+            <div class="bg-layer"></div>
+
+
+            <div class="auto-container">
+                <div class="nav-outer clearfix">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="current dropdown"><a href="#">首页</a>
+                                    <!-- <ul>
+                                         <li><a href="#">Homepage One</a></li>
+                                         <li><a href="#">Homepage Two</a></li>
+                                     </ul> -->
+                                </li>
+                                <li class="dropdown"><a href="#one">密度聚类算法</a>
+                                    <ul>
+                                        <li><a href="localhost:8082/cluster/ssc">k-Means</a></li>
+                                        <li><a href="#">DBSCAN</a></li>
+                                        <li><a href="#">DP</a></li>
+                                        <li><a href="#">OPT</a></li>
+                                        <li><a href="">SSC</a></li>
+                                        <li><a href="#">LRR</a></li>
+<!--                                        <li><a href="#">Storage &amp; Logistic</a></li>-->
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="two">图聚类算法</a>
+                                    <ul>
+                                        <li><a href="http://localhost/cluster/ssc">SSC</a></li>
+                                        <li><a href="#">LRR</a></li>
+                                        <li><a href="#">Rcut</a></li>
+                                        <li><a href="#">Ncut</a></li>
+                                        <li><a href="#">SC</a></li>
+
+                                    </ul>
+                                </li>
+                                <!-- <li class="dropdown"><a href="#">News</a>
+                                    <ul>
+                                        <li><a href="blog.html">Our News</a></li>
+                                        <li><a href="blog-single.html">News Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact Us</a></li> -->
+                                <li><a href="#three">关于我们</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+<!--    </header>-->
+<!--</div>-->
+
+        <!--Sticky Header-->
+        <div class="sticky-header">
+            <div class="auto-container clearfix">
+                <!--Logo-->
+                <div class="logo pull-left">
+                    <a href="#" class="images-responsive"><images src="images/logo-small.png" alt="Transpo" title="Transpo"></a>
+                </div>
+
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="current dropdown"><a href="#">首页</a>
+<!--                                    <ul>-->
+<!--                                        <li><a href="#">首页</a></li>-->
+<!--&lt;!&ndash;                                        <li><a href="#">Homepage Two</a></li>&ndash;&gt;-->
+<!--                                    </ul>-->
+                                </li>
+
+<!--                                </li>-->
+                                <li class="dropdown"><a href="#one">密度聚类算法</a>
+
+                                </li>
+                                <li class="dropdown"><a href="#two">图聚类算法</a>
+                                </li>
+                                <li><a href="#three">关于我们</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+
+            </div>
+        </div><!--End Sticky Header-->
+
+    </header>
+    <!--End Main Header -->
+
+
+    <!--Main Slider-->
+    <section class="main-slider negative-margin">
+
+<!--        <div class="tp-banner-container">-->
+        <div class="auth-container">
+            <div class="tp-banner">
+                <ul>
+                	
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/4.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
+                    <img src="images/main-slider/4.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                    
+                    <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="-70"
+                    data-speed="1500"
+                    data-start="0"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><div class="italic-text">Welcome to Transpo</div></div>
+                    
+                    <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="10"
+                    data-speed="1500"
+                    data-start="500"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><h2>We Provide <br>Business Solution</h2></div>
+                    
+                    <div class="tp-caption sfr sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="110"
+                    data-speed="1500"
+                    data-start="1000"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><a href="#" class="theme-btn btn-style-one">Read more about transpo <span class="fa fa-caret-right"></span></a></div>
+                    
+                    <div class="tp-caption sfr sfb tp-resizeme"
+                    data-x="left" data-hoffset="290"
+                    data-y="center" data-voffset="110"
+                    data-speed="1500"
+                    data-start="1500"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><a href="#" class="theme-btn btn-style-two">Purchase Now</a></div>
+                    
+                    
+                    </li>
+                    
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/5.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
+                    <img src="images/main-slider/5.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                    
+                    <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="-70"
+                    data-speed="1500"
+                    data-start="0"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><div class="italic-text">Welcome to Transpo</div></div>
+                    
+                    <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="10"
+                    data-speed="1500"
+                    data-start="500"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><h2>We Provide <br>Business Solution</h2></div>
+                    
+                    <div class="tp-caption sfr sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="110"
+                    data-speed="1500"
+                    data-start="1000"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><a href="#" class="theme-btn btn-style-one">Read more about transpo <span class="fa fa-caret-right"></span></a></div>
+                    
+                    <div class="tp-caption sfr sfb tp-resizeme"
+                    data-x="left" data-hoffset="290"
+                    data-y="center" data-voffset="110"
+                    data-speed="1500"
+                    data-start="1500"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><a href="#" class="theme-btn btn-style-two">Purchase Now</a></div>
+                    
+                    
+                    </li>
+                     
+                </ul>
+
+                <div class="tp-bannertimer"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Featured Services-->
+    <section class="featured-services">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>Your trusted logistic partner in worldwide </h2>
+                <div class="text">Lorem ipsum dolor sit amet, <strong>usu no alienum adolescens</strong> an principes liberavisse eam, nam wisi malis recusabo at.</div>
+            </div>
+            <div class="text-center"><a href="#" class="theme-btn btn-style-four">带您了解污染物 <span class="fa fa-caret-right"></span></a></div>
+         <div class="col-md-12">
+            <div class="col-md-6 " >
+                <table class="mt">
+                    <caption style="text-align: center">空气污染指数(AQI)标准对应表</caption>
+                    <tr>
+                        <th>空气质量指数</th>
+                        <th>空气质量状况</th>
+                        <th>对健康影响情况</th>
+                        <th>建议采取的措施</th>
+                    </tr>
+                    <tr>
+                        <td>0-50</td>
+                        <td>优</td>
+                        <td>空气质量令人满意，基本无空气污染，对健康没有危害</td>
+                        <td>各类人群可多参加户外活动，多呼吸一下清新的空气</td>
+
+                    </tr>
+                    <tr>
+                        <td>51-100</td>
+                        <td>良</td>
+                        <td>可能对少数异常敏感人群健康有较弱影响</td>
+                        <td>正常进行室外活动</td>
+
+                    </tr>
+                    <tr>
+                        <td>101-150</td>
+                        <td>轻污染</td>
+                        <td>易感人群症状加剧,健康人群出现刺激症状</td>
+                        <td>特殊群体减少体力消耗大的户外活动</td>
+
+                    </tr>
+                    <tr>
+                        <td>151-200</td>
+                        <td>中污染</td>
+                        <td>进一步加剧易感人群症状和对健康人群的影响</td>
+                        <td>一般人群尽量减少户外活动</td>
+
+                    </tr>
+                    <tr>
+                        <td>201-250</td>
+                        <td>重污染</td>
+                        <td>心脏病患者症状显著加剧,健康人群普遍出现症状</td>
+                        <td>一般人群减少户外活动</td>
+
+                    </tr>
+                    <tr>
+                        <td>>300</td>
+                        <td>重污染</td>
+                        <td>健康人群运动耐受力降低，有强烈症状</td>
+                        <td>一般人群尽量不要滞留在室外</td>
+
+                    </tr>
+                </table>
+            </div>
+
+             <div class="col-md-6 " >
+                 <table class="mt">
+                     <caption style="text-align: center">各污染物对⼈体伤害情况</caption>
+                     <tr>
+                         <th>选取指标</th>
+                         <th>污染物危害</th>
+                         <td>单位</td>
+
+                     </tr>
+                     <tr>
+                         <td>PM2.5</td>
+                         <td>细颗粒物由于径小，富含大量的有毒、有害物质，且在大气中停留时间长、传播距离远，因此对人的身体健康和环境的质量影响很大</td>
+                         <td>ug/m³</td>
+
+
+                     </tr>
+                     <tr>
+                         <td>PM10</td>
+                         <td>可吸入颗粒物的直径比细颗粒物的直径大，它可以被人体吸入，会累积在呼吸系统中，引发许多疾病</td>
+                         <td>ug/m³</td>
+
+
+                     </tr>
+                     <tr>
+                         <td>SO2</td>
+                         <td>SO2是一种无色但具有强烈刺激性气味的气体。易溶于人体的血液和其他黏性液;低浓度下的SO2会造成植物产量下降;形成酸雨和酸雾</td>
+                         <td>ug/m³</td>
+
+
+                     </tr>
+                     <tr>
+                         <td>CO</td>
+                         <td>CO是一种对血液与神经系统毒性很强的污染物，长时间接触低浓度的一氧化碳对人体心血管系统、神经系统乃至对后代均有一定影响</td>
+                         <td>mg/m³</td>
+
+                     </tr>
+                     <tr>
+                         <td>NO2</td>
+                         <td>会损害人体呼吸道;对水体、土壤和大气均可造成污染</td>
+                         <td>ug/m³</td>
+
+                     </tr>
+                     <tr>
+                         <td>03</td>
+                         <td>刺激人体呼吸道，引发支气管炎和肺气肿，造成神经中毒，头晕头痛，破坏人体皮肤中的维生素E;身体健康的人们对臭氧也更敏感些;抑制多种作物以及树种的生长</td>
+                         <td>ug/m³</td>
+
+                     </tr>
+                 </table>
+             </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="featured-services">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+             <div class="row clearfix">
+        
+                 <div class="text-center"><a href="#" class="theme-btn btn-style-one" id="one">密度聚类算法<span class="fa fa-caret-right"></span></a></div>
+                <div class="row">
+                    <div class="inner-box wow fadeIn  col-md-4" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <h3><a href="#">k-Means聚类方法 <br>Solution &amp; Distribution</a></h3>
+<!--                        <figure class="image-box"><images src="../../images/homepage/resource/featured-image-1.jpg" alt=""><a class="overlay" href="services-single.html"></a></figure>-->
+                    </div>
+                    <div class="lower-content col-md-8" >
+<!--                            <h3><a href="services-single.html">Transport <br>Solution &amp; Distribution</a></h3>-->
+                            <div class="text">Lorem ipsum dolor sit amet offendit invidunt et per, mei congue dicant eu, recusabo urbanit vel cu. Quo tollit expetenda ea, cum eu sententiae theophrastus. Ea has movet copiosae, at.</div>
+                    </div>
+
+                </div>
+                 <div class="row">
+                     <div class="inner-box wow fadeIn  col-md-4" data-wow-delay="0ms" data-wow-duration="1500ms">
+                         <h3><a href="#">密度峰值聚类算法 <br>DP</a></h3>
+                         <!--                        <figure class="image-box"><images src="../../images/homepage/resource/featured-image-1.jpg" alt=""><a class="overlay" href="services-single.html"></a></figure>-->
+                     </div>
+                     <div class="lower-content col-md-8" >
+                         <!--                            <h3><a href="services-single.html">Transport <br>Solution &amp; Distribution</a></h3>-->
+                         <div class="text">Lorem ipsum dolor sit amet offendit invidunt et per, mei congue dicant eu, recusabo urbanit vel cu. Quo tollit expetenda ea, cum eu sententiae theophrastus. Ea has movet copiosae, at.</div>
+                     </div>
+
+                 </div>
+
+            </div>
+ 
+            </div>
+        </div>
+</section>
+
+    <section class="featured-services">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <div class="row clearfix">
+              
+                    <div class="text-center"><a href="#" class="theme-btn btn-style-one" id="two">图聚类算法 <span class="fa fa-caret-right"></span></a></div>
+                    <div class="row">
+                        <div class="inner-box wow fadeIn  col-md-4" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <h3><a href="#">谱聚类算法 <br>Spectral clustering</a></h3>
+                            <!--                        <figure class="image-box"><images src="../../images/homepage/resource/featured-image-1.jpg" alt=""><a class="overlay" href="services-single.html"></a></figure>-->
+                        </div>
+                        <div class="lower-content col-md-8" >
+                            <!--                            <h3><a href="services-single.html">Transport <br>Solution &amp; Distribution</a></h3>-->
+                            <div class="text">Lorem ipsum dolor sit amet offendit invidunt et per, mei congue dicant eu, recusabo urbanit vel cu. Quo tollit expetenda ea, cum eu sententiae theophrastus. Ea has movet copiosae, at.</div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="inner-box wow fadeIn  col-md-4" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <h3><a href="#">稀疏表示子空间聚类 <br>Low-Rank Representation,LRR</a></h3>
+                            <!--                        <figure class="image-box"><images src="../../images/homepage/resource/featured-image-1.jpg" alt=""><a class="overlay" href="services-single.html"></a></figure>-->
+                        </div>
+                        <div class="lower-content col-md-8" >
+                            <!--                            <h3><a href="services-single.html">Transport <br>Solution &amp; Distribution</a></h3>-->
+                            <div class="text">Lorem ipsum dolor sit amet offendit invidunt et per, mei congue dicant eu, recusabo urbanit vel cu. Quo tollit expetenda ea, cum eu sententiae theophrastus. Ea has movet copiosae, at.</div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="inner-box wow fadeIn  col-md-4" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <h3><a href="#">低秩表示子空间聚类 <br>Sparse Subspace Clustering,SSC</a></h3>
+                            <!--                        <figure class="image-box"><images src="../../images/homepage/resource/featured-image-1.jpg" alt=""><a class="overlay" href="services-single.html"></a></figure>-->
+                        </div>
+                        <div class="lower-content col-md-8" >
+                            <!--                            <h3><a href="services-single.html">Transport <br>Solution &amp; Distribution</a></h3>-->
+                            <div class="text">Lorem ipsum dolor sit amet offendit invidunt et per, mei congue dicant eu, recusabo urbanit vel cu. Quo tollit expetenda ea, cum eu sententiae theophrastus. Ea has movet copiosae, at.</div>
+                        </div>
+
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-services">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+            <div class="text-center"><a href="#" class="theme-btn btn-style-one" id="three">关于我们更多 <span class="fa fa-caret-right"></span></a></div>
+                    <div class="row clearfix">
+                        <!--Featured Service Column-->
+                        <div class="featured-service-column col-md-4 col-sm-6 col-xs-12">
+                            <div class="inner-box wow fadeIn" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <figure class="image-box"><img src="images/resource/featured-image-1.jpg" alt=""><a class="overlay" href="services-single.html"></a></figure>
+                                <div class="lower-content">
+                                    <h3><a href="services-single.html">Transport <br>Solution &amp; Distribution</a></h3>
+                                    <div class="text">Lorem ipsum dolor sit amet offendit invidunt et per, mei congue dicant eu, recusabo urbanit vel cu. Quo tollit expetenda ea, cum eu sententiae theophrastus. Ea has movet copiosae, at.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Featured Service Column-->
+                        <div class="featured-service-column col-md-4 col-sm-6 col-xs-12">
+                            <div class="inner-box wow fadeIn" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <figure class="image-box"><img src="images/resource/featured-image-2.jpg" alt=""><a class="overlay" href="services-single.html"></a></figure>
+                                <div class="lower-content">
+                                    <h3><a href="services-single.html">Integrated <br>Logistic Provider</a></h3>
+                                    <div class="text">Lorem ipsum dolor sit amet offendit invidunt et per, mei congue dicant eu, recusabo urbanit vel cu. Quo tollit expetenda ea, cum eu sententiae theophrastus. Ea has movet copiosae, at.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Featured Service Column-->
+                        <div class="featured-service-column col-md-4 col-sm-6 col-xs-12">
+                            <div class="inner-box wow fadeIn" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <figure class="image-box"><img src="images/resource/featured-image-3.jpg" alt=""><a class="overlay" href="services-single.html"></a></figure>
+                                <div class="lower-content">
+                                    <h3><a href="services-single.html">Warehousing <br>&amp; Chain Solution</a></h3>
+                                    <div class="text">Lorem ipsum dolor sit amet offendit invidunt et per, mei congue dicant eu, recusabo urbanit vel cu. Quo tollit expetenda ea, cum eu sententiae theophrastus. Ea has movet copiosae, at.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!--Fun Facts Section-->
+    <section class="fun-fact-section" style="background-image:url(images/background/image-1.jpg);">
+        <div class="auto-container">
+            <div class="fact-counter">
+                <div class="clearfix">
+
+                    <!--Column-->
+<
+                    <div class="col-md-3 col-sm-6 col-xs-12 column counter-column wow fadeIn" data-wow-duration="0ms">
+                        <div class="inner">
+                            <div class="icon-box"><span class="flaticon-trophy-1"></span></div>
+                            <div class="count-outer"><span >中国</span></div>
+                            <h4 class="counter-title">Country</h4>
+                        </div>
+                    </div>
+                    <!--Column-->
+                    <div class="col-md-3 col-sm-6 col-xs-12 column counter-column wow fadeIn" data-wow-duration="0ms">
+                        <div class="inner">
+                            <div class="icon-box"><span class="flaticon-placeholder"></span></div>
+                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="596">0</span></div>
+                            <h4 class="counter-title">城市数量</h4>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="col-md-3 col-sm-6 col-xs-12 column counter-column wow fadeIn" data-wow-duration="0ms">
+                        <div class="inner">
+                            <div class="icon-box"><span class="flaticon-truck-2"></span></div>
+                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="12">0</span></div>
+                            <h4 class="counter-title">分析算法</h4>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="col-md-3 col-sm-6 col-xs-12 column counter-column wow fadeIn" data-wow-duration="0ms">
+                        <div class="inner">
+                            <div class="icon-box"><span class="flaticon-avatar"></span></div>
+                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="23W">0</span>k</div>
+                            <h4 class="counter-title">数据量</h4>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Services Section-->
+    <section class="services-section" style="background-image:url(images/background/image-2.jpg);">
+        <div class="auto-container">
+            <div class="sec-title light text-center">
+                <h1>Our Service </h1>
+                <div class="text">Lorem ipsum dolor sit amet, <strong>usu no alienum adolescens</strong> an principes liberavisse eam, nam wisi malis recusabo at.</div>
+            </div>
+
+            <div class="row clearfix">
+
+                <!--Default Service Block-->
+                <div class="default-service-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box"><span class="flaticon-ship"></span></div>
+                        <h3>Ship Transport </h3>
+                        <div class="text">Lorem ipsum dolor sit amet, ludus aliquip mei eu, quando commodo salutatus vis ins.</div>
+                    </div>
+                </div>
+
+                <!--Default Service Block-->
+                <div class="default-service-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box"><span class="flaticon-package"></span></div>
+                        <h3>Packup &amp; Delivery </h3>
+                        <div class="text">Lorem ipsum dolor sit amet, ludus aliquip mei eu, quando commodo salutatus vis ins.</div>
+                    </div>
+                </div>
+
+                <!--Default Service Block-->
+                <div class="default-service-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box"><span class="flaticon-passenger-train-front-view"></span></div>
+                        <h3>Rail Transport  </h3>
+                        <div class="text">Lorem ipsum dolor sit amet, ludus aliquip mei eu, quando commodo salutatus vis ins.</div>
+                    </div>
+                </div>
+
+                <!--Default Service Block-->
+                <div class="default-service-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box"><span class="flaticon-storage"></span></div>
+                        <h3>Warehousing </h3>
+                        <div class="text">Lorem ipsum dolor sit amet, ludus aliquip mei eu, quando commodo salutatus vis ins.</div>
+                    </div>
+                </div>
+
+                <!--Default Service Block-->
+                <div class="default-service-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box"><span class="flaticon-transport-1"></span></div>
+                        <h3>Road Transport  </h3>
+                        <div class="text">Lorem ipsum dolor sit amet, ludus aliquip mei eu, quando commodo salutatus vis ins.</div>
+                    </div>
+                </div>
+
+                <!--Default Service Block-->
+                <div class="default-service-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box"><span class="flaticon-airplane-shape"></span></div>
+                        <h3>Air Frieght </h3>
+                        <div class="text">Lorem ipsum dolor sit amet, ludus aliquip mei eu, quando commodo salutatus vis ins.</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Default Section-->
+
+
+<!--    </footer>-->
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon flaticon-airplane-1"></span></div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/revolution.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+</script>
+</body>
+</html>

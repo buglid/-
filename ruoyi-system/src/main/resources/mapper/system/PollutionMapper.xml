@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.PollutionMapper">
+    
+    <resultMap type="Pollution" id="PollutionResult">
+        <result property="id"    column="id"    />
+        <result property="areaId"    column="area_id"    />
+        <result property="Date"    column="Date"    />
+        <result property="pm25"    column="PM2_5"    />
+        <result property="PM10"    column="PM10"    />
+        <result property="SO2"    column="SO2"    />
+        <result property="NO2"    column="NO2"    />
+        <result property="CO"    column="CO"    />
+        <result property="O3"    column="O3"    />
+        <result property="enterDate"    column="enter_date"    />
+        <result property="userId"    column="user_id"    />
+        <result property="remarks"    column="remarks"    />
+    </resultMap>
+
+    <sql id="selectPollutionVo">
+        select id, area_id, Date, PM2_5, PM10, SO2, NO2, CO, O3, enter_date, user_id, remarks from pollution
+    </sql>
+
+    <select id="selectPollutionList" parameterType="Pollution" resultMap="PollutionResult">
+        <include refid="selectPollutionVo"/>
+        <where>  
+            <if test="areaId != null "> and area_id = #{areaId}</if>
+            <if test="Date != null "> and Date = #{Date}</if>
+            <if test="pm25 != null "> and PM2_5 = #{pm25}</if>
+            <if test="PM10 != null "> and PM10 = #{PM10}</if>
+            <if test="SO2 != null "> and SO2 = #{SO2}</if>
+            <if test="NO2 != null "> and NO2 = #{NO2}</if>
+            <if test="CO != null "> and CO = #{CO}</if>
+            <if test="O3 != null "> and O3 = #{O3}</if>
+<!--            <if test="enterDate != null "> and enter_date = #{enterDate}</if>-->
+            <if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+                AND date_format(Date,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+                AND date_format(Date,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+            </if>
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="remarks != null  and remarks != ''"> and remarks = #{remarks}</if>
+        </where>
+        order by Date desc
+    </select>
+    
+    <select id="selectPollutionById" parameterType="Long" resultMap="PollutionResult">
+        <include refid="selectPollutionVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertPollution" parameterType="Pollution" useGeneratedKeys="true" keyProperty="id">
+        insert into pollution
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="areaId != null">area_id,</if>
+            <if test="Date != null">Date,</if>
+            <if test="pm25 != null">PM2_5,</if>
+            <if test="PM10 != null">PM10,</if>
+            <if test="SO2 != null">SO2,</if>
+            <if test="NO2 != null">NO2,</if>
+            <if test="CO != null">CO,</if>
+            <if test="O3 != null">O3,</if>
+            <if test="enterDate != null">enter_date,</if>
+            <if test="userId != null">user_id,</if>
+            <if test="remarks != null">remarks,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="areaId != null">#{areaId},</if>
+            <if test="Date != null">#{Date},</if>
+            <if test="pm25 != null">#{pm25},</if>
+            <if test="PM10 != null">#{PM10},</if>
+            <if test="SO2 != null">#{SO2},</if>
+            <if test="NO2 != null">#{NO2},</if>
+            <if test="CO != null">#{CO},</if>
+            <if test="O3 != null">#{O3},</if>
+            <if test="enterDate != null">#{enterDate},</if>
+            <if test="userId != null">#{userId},</if>
+            <if test="remarks != null">#{remarks},</if>
+         </trim>
+    </insert>
+
+    <update id="updatePollution" parameterType="Pollution">
+        update pollution
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="areaId != null">area_id = #{areaId},</if>
+            <if test="Date != null">Date = #{Date},</if>
+            <if test="pm25 != null">PM2_5 = #{pm25},</if>
+            <if test="PM10 != null">PM10 = #{PM10},</if>
+            <if test="SO2 != null">SO2 = #{SO2},</if>
+            <if test="NO2 != null">NO2 = #{NO2},</if>
+            <if test="CO != null">CO = #{CO},</if>
+            <if test="O3 != null">O3 = #{O3},</if>
+            <if test="enterDate != null">enter_date = #{enterDate},</if>
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="remarks != null">remarks = #{remarks},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deletePollutionById" parameterType="Long">
+        delete from pollution where id = #{id}
+    </delete>
+
+    <delete id="deletePollutionByIds" parameterType="String">
+        delete from pollution where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>
